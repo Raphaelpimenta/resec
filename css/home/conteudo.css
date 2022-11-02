@@ -1,0 +1,35 @@
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 40px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.conteudo {
+    align-items: center;
+}
+
+.conteudo-texto h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.125;
+    margin-bottom: 20px;
+}
+
+.conteudo-texto p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+    .conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .conteudo-texto {
+        margin-bottom: 60px;
+    }
+}

@@ -1,0 +1,76 @@
+.clientes {
+    padding: 40px 0px 60px 0px;
+}
+
+.clientes h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.125;
+    margin-bottom: 60px;
+}
+
+.cliente-conteudo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.cliente-conteudo div {
+    background-color: #ededed;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.cliente-conteudo div:hover {
+    color: white;
+    background-color: #5f27cd;
+}
+
+.cliente-conteudo img {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cliente-conteudo .perfil {
+    width: 70px;
+    height: 70px;
+}
+
+.cliente-conteudo h4 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.cliente-conteudo p {
+    text-align: center;
+}
+
+@media (max-width: 800px){
+    .clientes h2 {
+        font-size: 1.6rem;
+        margin-bottom: 40px;
+    }
+
+    .cliente-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .cliente-conteudo div {
+        margin: 0px 40px 0px 40px;
+    }
+
+    .cliente-conteudo div,
+    .cliente-conteudo div:hover {
+        background-color: #ededed;
+        color: #000000;
+    }
+
+    .cliente-conteudo div:hover:nth-child(2),
+    .cliente-conteudo div:nth-child(2){
+        color: white;
+        background-color: #5f27cd;
+    }
+}
